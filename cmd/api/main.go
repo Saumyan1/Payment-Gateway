@@ -16,7 +16,7 @@ import (
 
 func main(){
 
-	mux := http.NewServeMux()
+	mux := server.RegisterRoutes()
 
 	ser := server.New(":8080",mux)
 //go routine to start a server
